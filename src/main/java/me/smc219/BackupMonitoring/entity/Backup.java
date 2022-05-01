@@ -1,5 +1,8 @@
 package me.smc219.BackupMonitoring.entity;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -23,6 +26,9 @@ public class Backup {
 	private String name;
 
 	private Kind plan;
+
+	private LocalDateTime startTime;
+	private LocalDateTime endTime;
 
 	private int size;
 
